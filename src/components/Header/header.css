@@ -1,0 +1,964 @@
+.header {
+  display: flex;
+  height: 55px;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #c9181e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  width: 100%;
+}
+
+/* 
+.logo-heveagrip {
+  color: #b49662;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-right: 10%;
+  line-height: normal;
+  margin-left: 1.5%;
+  transition: color 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.logo-heveagrip:hover {
+  transform: scale(1.12);
+} */
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%) scale(0.5);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+.logo-heveagrip {
+  flex-shrink: 0;
+  margin-left: 2.3% !important;
+  margin-right: -2%;
+  animation: slideIn 0.8s ease-in-out forwards !important;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out !important;
+}
+
+.logo-heveagrip1 {
+  display: flex;
+  width: 70px;
+  height: auto;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.icons {
+  display: flex;
+  margin-top: 5px;
+  gap: 10px;
+  margin-right: -20px;
+}
+
+.icon-menu-header {
+  position: relative;
+  margin-right: 22px;
+}
+
+.flag-icon {
+  position: relative;
+  margin-top: 0px;
+  margin-right: 50px;
+}
+
+.flag-icon-2 {
+  position: relative;
+  margin-top: 1px;
+  width: 32px !important;
+  height: 24px !important;
+  margin-right: 30px !important;
+}
+
+.icon-menu-header svg {
+  margin-top: 3px;
+  fill: #ffffff;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+.icon-search-header svg {
+  width: 32px;
+  height: 24px;
+  margin-right: 11px;
+  margin-top: 1px;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+/* Add these styles to your existing CSS or create a new CSS file */
+
+/* Dropdown container */
+.dropdown-header-signup-signin-one {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.login-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: -40%;
+  margin-top: 1px;
+
+  padding: 0;
+}
+
+/* Dropdown content */
+
+/* Active state */
+.dropdown-header-signup-signin-one.active .login-dropdown-content {
+  display: block;
+}
+
+.dropdown-menu-header {
+  display: none;
+  position: absolute;
+  top: calc(100% + 14.4px);
+  right: -690%;
+  width: 238px;
+  height: 480px;
+  flex-shrink: 0;
+  background: #010f1e;
+  opacity: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.dropdown-menu-header.visible {
+  display: block;
+  transform: translateY(0);
+}
+
+.dropdown-menu-header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu-header li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  color: #b49662;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.dropdown-menu-header li a {
+  color: #79a8df;
+  text-decoration: none;
+}
+
+.dropdown-menu-header li:hover::before,
+.dropdown-menu-header li:hover,
+.dropdown-menu-header li:hover a,
+.dropdown-menu-header li:active::before,
+.dropdown-menu-header li:active,
+.dropdown-menu-header li:active a {
+  color: #79a8df;
+  cursor: pointer;
+}
+
+.dropdown-menu-header li::before {
+  content: "";
+  position: absolute;
+  width: 238px;
+  height: 32px;
+  background: #062f4b;
+  top: -4px;
+  left: -20px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown-menu-header li:hover::before,
+.dropdown-menu-header li:active::before {
+  opacity: 1;
+}
+
+.dropdown-login-header {
+  display: none;
+  position: absolute;
+  top: calc(100% + 14.4px);
+  right: -465%;
+  width: 238px;
+  height: 400px;
+  flex-shrink: 0;
+  background: #010f1e;
+  opacity: 95%;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.isLoginDropdownVisible {
+  position: absolute;
+  top: calc(100% + 14.4px);
+  width: 238px;
+  height: 111px;
+  flex-shrink: 0;
+  background: #010f1e;
+  opacity: 95%;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.signup3 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  fill: #b49662;
+  position: relative;
+  margin-top: -23%;
+  margin-left: -16%;
+}
+
+.signin3 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  fill: #b49662;
+  position: relative;
+  margin-top: 20%;
+  margin-left: -38%;
+}
+
+.sign-line {
+  width: 70%;
+  height: 1px;
+  background-color: #b49662;
+  position: absolute;
+  margin-right: 50%;
+  margin-left: -10%;
+  top: 58%;
+}
+
+.dropdown-login-header.visible {
+  display: block;
+  transform: translateY(0);
+}
+
+.dropdown-login-header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-login-header li {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  color: #b49662;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.login-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-top: 2px;
+  position: relative;
+}
+
+.login-label svg path,
+.login-option:hover {
+  color: #79a8df;
+  fill: #79a8df;
+}
+.login-option2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding-left: 25%;
+  padding-top: 5px;
+  position: relative;
+}
+
+.signout2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  fill: #b49662;
+  position: relative;
+}
+
+.login-label2 {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #b49662;
+}
+
+.line {
+  width: 70%;
+  height: 1px;
+  background-color: #b49662;
+  position: absolute;
+  margin-right: 50%;
+  margin-left: -10%;
+  top: -5%;
+}
+
+.login-label {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.icon-menu-header svg path,
+.icon-menu-header svg path {
+  fill: #ffffff;
+  transition: fill 0.3s ease-in-out;
+}
+.icon-search-header svg path,
+.icon-search-header svg path {
+  fill: #ffffff;
+  transition: fill 0.3s ease-in-out;
+}
+
+.icon-menu-header:hover svg path,
+.icon-menu-header.clicked svg path {
+  fill: #aed4f0;
+  cursor: pointer;
+}
+
+.icon-search-header:hover svg path,
+.icon-search-header.clicked svg path {
+  fill: #bbdff8;
+  cursor: pointer;
+}
+
+.select-language-two-1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 200;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.name {
+  color: #79a8df;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: -8%;
+  margin-top: -12%;
+
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.login-time {
+  color: #b49662;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.icon-login-header {
+  position: relative;
+  margin-right: 20px;
+}
+.logo-img-dropdown-header {
+  width: 175px;
+  height: auto;
+  flex-shrink: 0;
+  margin-left: 0%;
+  margin-top: -5%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.logo-img-dropdown-header:hover {
+  transform: scale(1.1);
+  transition: color 0.8s ease-in-out, transform 0.8s ease-in-out;
+  color: #bdd6dd;
+  cursor: pointer;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.search-bar {
+  position: fixed;
+  top: 7px;
+  width: 350px;
+  right: 270px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 5px;
+  z-index: 9999;
+}
+
+.search-bar input {
+  background-color: transparent;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  -webkit-text-fill-color: #fbfbff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  caret-color: rgb(255, 255, 255);
+}
+
+.flag-dropdown {
+  position: fixed;
+  top: 19.5px;
+  left: -100%; /* Start off-screen */
+  height: 100%;
+  background-color: #292929;
+  opacity: 1;
+  z-index: 9998;
+  display: none;
+  transition: left 0.3s ease; /* Add transition */
+}
+
+.flag-dropdown.visible {
+  left: -0%; /* Slide into view */
+
+  display: block;
+  transform: translateY(0);
+}
+
+.flag-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-top: -19px;
+  width: 293px;
+
+  position: relative;
+}
+
+.flag-label {
+  flex: 1;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  margin-left: 0px;
+  text-decoration: none;
+}
+
+.flag-icon svg {
+  cursor: pointer;
+  width: 24px !important;
+  height: 16px !important;
+  fill: #ffffff;
+  margin-right: 10px;
+}
+
+.flag-icon-2 svg {
+  cursor: pointer;
+  width: 32px !important;
+  height: 24px !important;
+  fill: #ffffff;
+}
+
+.flag-dropdown svg {
+  margin-right: 25px;
+  margin-left: 15px;
+}
+
+.flag-option:hover .flag-label,
+.flag-option:hover svg path,
+.flag-option:hover .flag-icon svg path,
+.flag-option:active .flag-label,
+.flag-option:active svg path,
+.flag-option:active .flag-icon svg path {
+  color: #71c3ff !important;
+}
+
+.flag-option:hover .flag-label::before,
+.flag-option:hover svg path::before,
+.flag-option:hover .flag-icon svg path::before,
+.flag-option:active .flag-label::before,
+.flag-option:active svg path::before,
+.flag-option:active .flag-icon svg path::before {
+  opacity: 1;
+}
+
+.flag-label::before,
+.flag-icon svg path::before {
+  content: "";
+  position: absolute;
+  height: 130%;
+  background: #131313;
+  top: -3px;
+  right: 0%;
+  z-index: -1;
+  opacity: 0;
+  width: 330px;
+  transition: opacity 0.3s ease;
+}
+
+.flag-label:hover::before,
+.flag-option:hover svg path::before,
+.flag-option:active .flag-label::before,
+.flag-option:active svg path::before,
+.flag-option:hover .flag-icon svg path::before,
+.flag-option:active .flag-icon svg path::before {
+  opacity: 1;
+  width: 330px;
+}
+
+@media screen and (max-width: 750px) {
+  .Home-1,
+  .Brands-1,
+  .Services-1,
+  .Packages-1 {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    margin: 0 4%;
+    font-family: Poppins;
+    color: #001056;
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .icons {
+    display: flex;
+    gap: 2px;
+    margin-top: 5px;
+    margin-right: -7%;
+  }
+  .logo-heveagrip {
+    flex-shrink: 0;
+    margin-left: 5% !important;
+    margin-right: -2%;
+    animation: slideIn 0.8s ease-in-out forwards;
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out !important;
+  }
+
+  .three-name-header {
+    margin-left: 2%;
+  }
+  .search-bar {
+    position: fixed;
+    top: 7px;
+    width: 300px;
+    right: 145px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #001056;
+    border-radius: 3px;
+    padding: 5px;
+    z-index: 9999;
+  }
+  .Home-1:hover,
+  .Brands-1:hover,
+  .Services-1:hover,
+  .Packages-1:hover {
+    color: #015897;
+    transform: scale(1.2);
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    display: flex;
+    height: 55px;
+    padding: 0;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    opacity: 100%;
+  }
+  
+  /* Header */
+  .three-name-header {
+    position: fixed;
+    top: 4px;
+    left: 47%;
+    transform: translateX(-50%);
+    height: 45px;
+    width: calc(96% - 10px); /* Adjusted width calculation */
+    display: flex;
+    align-items: center;
+    background-color: #cbcbcb;
+    border-radius: 3px;
+    padding: 0 5px; /* Changed padding to 0 on top/bottom */
+    z-index: 9999;
+  }
+
+  /* Navigation Links */
+  .Home-1,
+  .Brands-1,
+  .Services-1,
+  .Packages-1 {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    margin: 0 4%;
+    font-family: Poppins;
+    color: #001056;
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .flag-icon {
+    position: relative;
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+  .search-bar input {
+    background-color: transparent;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+  }
+
+  .search-bar {
+    position: fixed;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 45px;
+    width: calc(96% - 10px); /* Adjusted width calculation */
+    display: flex;
+    align-items: center;
+    background-color: #c9181e;
+    border: 0.1px solid #ffffff;
+    border-radius: 3px;
+    padding: 0 5px; /* Changed padding to 0 on top/bottom */
+    z-index: 9999;
+  }
+}
+
+.header-hevea-grip {
+  display: flex;
+  height: 55px;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #c9181e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.header-left {
+  flex-shrink: 0;
+  margin-left: 2.3%;
+  margin-top: 5px;
+  animation: slideIn 0.8s ease-in-out forwards !important;
+}
+
+.logo-heveagrip {
+  width: 85px;
+  height: auto;
+  margin-top: 0px;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out !important;
+}
+
+.logo-heveagrip:hover {
+  transform: scale(1.1);
+}
+
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* header.css */
+
+.line {
+  width: 30px;
+  height: 1px; /* Adjusted line height */
+  background-color: #fff;
+  margin: 5px 0; /* Adjusted margin */
+  transition: transform 0.3s ease;
+}
+
+.line-1-active {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line-2-active {
+  opacity: 0;
+}
+
+.line-3-active {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu {
+  position: fixed;
+  top: 55px;
+  left: -338px; /* Start off-screen */
+  width: 338px;
+  height: 100%;
+  background-color: #292929;
+  opacity: 0.999;
+  z-index: 9998;
+  transition: left 0.3s ease; /* Add transition */
+}
+
+.menu.open {
+  left: 0; /* Slide into view */
+}
+.menu-logo {
+  margin: 20px auto;
+  display: block;
+  width: 200px;
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease-in-out !important;
+  filter: drop-shadow(0 0 4px white);
+}
+
+.menu-logo:hover {
+  transform: translateX(-50%) scale(1.4);
+}
+
+.menu-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px !important;
+}
+.products-1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  margin-left: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.products-22 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; /* Extra-light font weight */
+  font-size: 16px; /* Font size */
+  margin-left: 45px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out !important;
+}
+
+.products-22:hover {
+  color: #6fb5e7;
+}
+
+.menu-nav ul li a,
+.menu-nav ul li div {
+  margin-top: 1px !important;
+  color: #fff;
+  font-weight: 200 !important;
+  text-decoration: none; /* Optional: remove underline from links */
+}
+
+.menu-nav ul li a:hover,
+.menu-nav ul li div:hover {
+  color: #60bdff;
+}
+
+.menu-nav ul li a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+/* header.css */
+
+.submenu {
+  display: none;
+  padding-left: 25px !important;
+}
+
+.submenu-second-12::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.submenu-second-12::-webkit-scrollbar-track {
+  background: #292929;
+  cursor: pointer;
+}
+
+.submenu-second-12::-webkit-scrollbar-thumb {
+  background-color: #cbcbcb;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.submenu-second-12::-webkit-scrollbar-thumb:hover {
+  background-color: #535353;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.submenu.show {
+  display: block;
+}
+
+/* Remaining CSS remains the same */
+
+/* header.css */
+.submenu {
+  padding: 10px; /* Remove default padding if any */
+  margin: 0; /* Remove default margin if any */
+  list-style: none; /* Remove bullet points */
+}
+
+.vehicle-lifts {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  margin-left: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease, scale 0.1s ease;
+}
+
+.vehicle-lifts:hover {
+  color: #60bdff;
+}
+
+.submenu li {
+  margin-top: -15px; /* Remove default margin from list items */
+  margin-bottom: 15px;
+}
+
+.submenu li a {
+  font-size: 16px;
+  line-height: 1.2; /* Use a reasonable line-height */
+  margin: 0; /* Remove margin for precise control */
+  padding: 0px 0px; /* Adjust padding as needed */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease, scale 0.1s ease;
+}
+.submenu li a:hover {
+  transform: scale(1.05); /* Slightly scale on hover */
+}
+
+/* Styling for All Products */
+.submenu li:first-child a {
+  font-family: "Poppins", sans-serif; /* Poppins font */
+  font-weight: 200; /* Light font weight */
+  font-size: 16px; /* Font size */
+}
+
+/* Styling for other submenu items */
+.submenu li:not(:first-child) a {
+  font-family: "Poppins", sans-serif; /* Poppins font */
+  font-weight: 300; /* Extra-light font weight */
+  font-size: 16px; /* Font size */
+}
+
+.submenu-second-12 {
+  overflow: auto;
+  margin-left: -21px;
+  height: 200px;
+}
+
+.submenu-second-13 {
+  overflow: auto;
+  margin-left: -21px;
+  height: auto;
+}
+
+.login-dropdown-content {
+  position: fixed;
+  opacity: 1;
+  top: 55px;
+  left: 0; /* Slide into view */
+  width: 338px;
+  height: 100%;
+  background-color: #292929;
+  opacity: 1;
+  z-index: 9998;
+  transition: left 0.3s ease; /* Add transition */
+}
+
+.login-dropdown-content a {
+  color: #ffffff;
+  margin-top: 10px !important;
+  margin-left: 16px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out !important;
+}
+
+/* Change color on hover */
+.login-dropdown-content a:hover {
+  color: #6fb5e7;
+  transform: scale(1) !important;
+  font-weight: 500;
+  transform-origin: center center !important; /* Center the scale effect both horizontally and vertically */
+}
+
+.get-login-111 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif; /* Poppins font */
+  font-weight: 500; /* Extra-light font weight */
+  font-size: 16px; /* Font size */
+  margin-top: 20px !important;
+  margin-left: 16px;
+}

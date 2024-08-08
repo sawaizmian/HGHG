@@ -1,0 +1,61 @@
+  /* videoframeone.css */
+  .video-hg-frame-two {
+    width: 40%;
+    margin-top: 0px !important;
+    margin: auto; /* Center the frame horizontally */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 104px;
+    background-color: #ffffff; /* Set background color */
+    overflow: hidden; /* Hide overflow to clip the sliding videos */
+  }
+
+ 
+  .video-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px; /* Add padding to simulate sliding */
+    animation: slideAnimation 30s linear infinite; /* Apply slide animation */
+  }
+
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-16.666% * 12)); /* Slide only 6 videos to the left */
+    }
+  }
+
+
+  .video-thumbnail {
+    width: calc(16.666% - 20px); /* 16.666% for each video box with 20px spacing */
+    height: 69px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 15px; /* Add margin-top */
+    transition: transform 0.4s ease-in-out; /* Add transition for scaling */
+  }
+
+  .video-thumbnail:hover {
+    transform: scale(1.4); /* Slightly smaller scaling on hover */
+    animation-play-state: paused; /* Pause the slide animation when hovering */
+  }
+
+  .selected-video-container {
+    width: 100%;
+    background-color: #fff; /* Set background color */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .selected-video-wrapper {
+    width: 60%; /* Adjust the width as desired */
+    margin: 0 auto; /* Center the video */
+  }
+
+  .selected-video {
+    width: 100%;
+  }

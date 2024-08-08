@@ -1,0 +1,165 @@
+/* Styles for larger screens (desktop/laptop) */
+.hevea-grip-velyen-jm-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+     margin-top: 1% !important;
+    margin-bottom: 6% !important;
+    margin-top: 20px;
+    background: #ffff;
+  }
+  
+  .hevea-grip-velyen-jm-left {
+    margin-left: 170px;
+    margin-top: 7%;
+  }
+  
+  .hevea-grip-velyen-jm-container {
+      opacity: 0;
+      transform: translateY(100px); /* Move the container down initially */
+      transition: opacity 0.8s ease, transform 0.8s ease; /* Add transition for smooth animation */
+    }
+    
+    .hevea-grip-velyen-jm-container.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+  
+  .hevea-grip-velyen-jm-title {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10px;
+  
+    line-height: normal;
+  }
+  
+  .hevea-grip-velyen-jm-big-title {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+  
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .hevea-grip-velyen-jm-text {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 20px;
+  
+    line-height: 28px;
+    width: 80%;
+  }
+  
+  .hevea-grip-velyen-jm-shop-now {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: underline;
+  }
+  
+  .hevea-grip-velyen-jm-shop-now:hover {
+    text-decoration: none;
+    color: #044c80;
+  }
+  
+  .hevea-grip-velyen-jm-right {
+    width: 70%;
+    margin-right: 10%;
+    margin-top: 1.5%;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hevea-grip-velyen-jm-right:hover {
+    transform: scale(1.05);
+  }
+  .hevea-grip-velyen-jm-image {
+    width: 100%;
+    margin-left: 20%;
+    height: auto;
+    width: 650px;
+  }
+  
+  /* Media queries for smaller screens */
+@media (max-width: 1750px) {
+  .hevea-grip-velyen-jm-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hevea-grip-velyen-jm-left {
+    margin: 0;
+    text-align: center;
+  }
+  .hevea-grip-velyen-jm-title {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: -40px;
+
+    line-height: normal;
+  }
+  .hevea-grip-velyen-jm-left {
+    margin-left: 30px;
+  }
+  .hevea-grip-velyen-jm-big-title {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px !important;
+    width: 90%;
+    font-weight: 800;
+  }
+
+  .hevea-grip-velyen-jm-text {
+    max-width: 100%;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+  }
+  .hevea-grip-velyen-jm-text ul {
+    max-width: 100%;
+    font-size: 16px;
+    width: 90%;
+    text-align: left;
+  }
+  .hevea-grip-velyen-jm-shop-now {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    margin-left: -50px;
+  }
+  .hevea-grip-velyen-jm-right {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hevea-grip-velyen-jm-image {
+    align-items: center;
+    justify-content: center;
+    margin-left: 51px;
+
+    text-align: center;
+    width: 300px !important;
+  }
+}

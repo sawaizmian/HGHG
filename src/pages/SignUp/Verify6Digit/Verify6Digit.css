@@ -1,0 +1,140 @@
+.verification-container {
+  position: relative;
+  width: 320px;
+  margin-right: 18% !important;
+  margin-top: 10% !important;
+  margin: 0 auto;
+}
+
+.verification-text {
+  color: #010f1e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 23.229px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 150%;
+  margin-left: -26% !important;
+  text-transform: capitalize;
+}
+.code-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.verify-password-verify-button-1 {
+  width: 92px;
+  height: 35px;
+  flex-shrink: 0;
+  border: 0.5px solid #010f1e;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  color: #010f1e;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 37% !important;
+  position: relative;
+}
+
+.verify-password-verify-button-1::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #291a01;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.verify-password-verify-button-1:hover::before {
+  transform: scaleX(1);
+}
+
+.verify-password-verify-button-1:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid #010f1e;
+  background: #74B2F7;
+  color: #fff;
+}
+
+.verify-password-verify-disabled-button {
+  width: 92px;
+  height: 35px;
+  flex-shrink: 0;
+  border: 0.5px solid #010f1e;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  color: #010f1e;
+  font-family: "Poppins";
+  margin-left: 37% !important;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  opacity: 50%;
+  line-height: normal;
+  position: relative;
+}
+
+.code-lines {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.code-numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.code-number {
+  width: 0.86em;
+  line-height: 1;
+  margin: 0.1em;
+  padding: 8px 0 4px;
+  font-size: 2.65em;
+  text-align: center;
+  appearance: textfield;
+  border: 0;
+  color: #010f1e;
+  font-family: Poppins;
+
+  border-radius: 6px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.back-icon-for-sign-3{
+    margin-left: 45%;
+    margin-top: 29%;
+    opacity: 0.2;
+    transition: opacity 0.4s ease;
+    
+  }
+  
+  .back-icon-for-sign-3:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  

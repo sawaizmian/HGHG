@@ -1,0 +1,419 @@
+.bid-type-image-detail-container {
+  width: 100%;
+  height: auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.Product-page-name-left-two {
+  align-items: flex-start;
+  margin-top: 120px;
+  text-align: center;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out !important;
+}
+
+.Product-page-name-left-two:hover {
+  color: #c9181e;
+  transform: scale(1.2);
+}
+
+.fullscreen {
+  height: 100vh; /* Make the container fullscreen */
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20%;
+}
+
+.center-image-container {
+  text-align: center;
+  margin-top: 5%;
+  position: relative; /* Add position relative */
+}
+
+.magnifier {
+  width: 50px; /* Reduced width */
+  height: 50px; /* Reduced height */
+  position: absolute;
+  border-radius: 50%; /* Make it round */
+  overflow: hidden; /* Hide overflow */
+  display: none; /* Initially hide magnifier */
+  z-index: 999; /* Ensure it's on top */
+  transform: scale(7); /* Increased zoom */
+  pointer-events: none; /* Ignore pointer events to prevent interference */
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+}
+
+.center-image-container:hover .magnifier {
+  display: block; /* Show magnifier on hover */
+}
+
+.center-image {
+  width: 800px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.images-in-box {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  pointer-events: none;
+}
+
+.images-in-box img {
+  pointer-events: auto;
+}
+
+.image-boxes {
+  justify-content: left;
+  margin-left: -1600px;
+  margin-top: -110px;
+  margin-bottom: -800px;
+}
+
+.image-box {
+  width: 171.393px;
+  height: 159.593px;
+  flex-shrink: 0;
+  border: 0.2px solid #e4e4e4 !important;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box.active,
+.image-box:hover {
+  transform: scale(1.1);
+  border: 0.2px solid #c9181e !important;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  z-index: 999999;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-class-name {
+  margin-top: 50px;
+}
+
+.fullscreen-image {
+  width: 1000px;
+  height: auto;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.fullscreen-svg-121 {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 2005px;
+  margin-top: -950px;
+  transition: transform 0.3s ease;
+}
+
+.bid-main-detail-tab-svg {
+  margin-right: 10px;
+}
+
+.discounted-price-1134 {
+  color: #ea3a3a;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: -240px;
+  margin-top: 20px;
+}
+
+.discounted-price-113412 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #c9181e;
+  z-index: 9999999;
+  border-radius: 50%;
+  margin-left: 390px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discounted-price-113412:hover {
+  transform: scale(1.6) translateY(0px) rotate(0deg);
+}
+
+.discounted-price-value-113412 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 55px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.discounted-price-113412:hover .discounted-price-value-113412 {
+  transform: scale(1.3);
+}
+
+.sale-discounted-original-price-value-113 {
+  margin-right: 10px;
+}
+
+.discounted-price-value-1134 {
+  position: absolute; /* Ensure the span is displayed as a block element */
+  margin-top: 0px !important;
+}
+
+.fullscreen-svg-121:hover {
+  transform: scale(1.1) rotate(-45deg); /* Scale up and rotate on hover */
+}
+
+.fullscreen-image img {
+  pointer-events: auto;
+}
+
+.arrow-container {
+  align-items: center;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.left-arrow,
+.right-arrow {
+  cursor: pointer;
+  opacity: 0.2;
+  transition: transform 0.2s;
+}
+
+.left-arrow {
+  margin-left: 70px;
+}
+
+.right-arrow {
+  margin-left: 70px;
+}
+
+/* Add a hover effect for the left and right arrows */
+.right-arrow:hover,
+.left-arrow:hover {
+  opacity: 100%;
+  transform: scale(1.2);
+}
+
+.image-box.active {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 1820px) {
+  .Product-page-name-left-two {
+    font-size: 18px;
+    margin-top: 80px;
+  }
+
+  .discounted-price-1134 {
+    color: #ea3a3a;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: -240px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+  }
+  .discounted-price-113412 {
+    width: 100px;
+    display: none;
+    height: 100px;
+    margin-left: 0;
+    margin-top: -30px;
+  }
+
+  .discounted-price-value-113412 {
+    font-size: 30px;
+  }
+
+  .image-boxes {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-box {
+    width: 140px;
+    height: 150px;
+    transform: scale(1);
+
+    margin: 10px;
+  }
+
+  .center-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    z-index: 999999;
+    justify-content: center;
+    align-items: center;
+  }
+  .fullscreen-image {
+    margin-left: -0px;
+
+    width: 80%;
+    height: auto;
+  }
+
+  .fullscreen-svg-121 {
+    margin-left: -0px;
+    margin-top: -640px;
+  }
+
+  .arrow-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    
+    margin: 10px auto;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    rotate: -90deg;
+    margin: 10px;
+    transform: scale(1.6);
+  }
+  .right-arrow:hover,
+.left-arrow:hover {
+  opacity: 100%;
+  transform: scale(1.8);
+}
+
+}
+
+
+
+@media (max-width: 800px) {
+  .Product-page-name-left-two {
+    font-size: 16px;
+    margin-top: 70px;
+  }
+
+  .discounted-price-1134 {
+    color: #ea3a3a;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: -240px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+  }
+  .discounted-price-113412 {
+    width: 100px;
+    display: none;
+    height: 100px;
+    margin-left: 0;
+    margin-top: -30px;
+  }
+
+  .discounted-price-value-113412 {
+    font-size: 30px;
+  }
+
+  .image-boxes {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-box {
+    width: 60px;
+    height: 70px;
+    
+    margin: 10px;
+  }
+
+  .center-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    z-index: 999999;
+    justify-content: center;
+    align-items: center;
+  }
+  .fullscreen-image {
+    margin-left: -0px;
+
+    width: 80%;
+    height: auto;
+  }
+
+  .fullscreen-svg-121 {
+    margin-left: -0px;
+    margin-top: -640px;
+  }
+
+  .arrow-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    
+    margin: 10px auto;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    rotate: -90deg;
+    margin: -10px;
+    transform: scale(0.8);
+  }
+}

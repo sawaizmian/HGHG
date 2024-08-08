@@ -1,0 +1,156 @@
+/* Styles for larger screens (desktop/laptop) */
+.hevea-grip-three-fasep-hg-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 4%;
+  background: #ffffff;
+}
+
+.hevea-grip-three-fasep-hg-left {
+  margin-left: 170px;
+  margin-top: 6%;
+}
+
+.hevea-grip-three-fasep-hg-title {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+.hevea-grip-three-fasep-hg-container {
+  opacity: 0; /* Initially hide the container */
+  transform: translateY(100px); /* Move the container down initially */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Add transition for smooth animation */
+}
+
+.hevea-grip-three-fasep-hg-container.animate {
+  opacity: 1; /* Show the container when animation starts */
+  transform: translateY(
+    0
+  ); /* Move the container back to its original position */
+}
+
+.hevea-grip-three-fasep-hg-big-title {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  line-height: normal;
+}
+
+.hevea-grip-three-fasep-hg-text {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.hevea-grip-three-fasep-hg-shop-now {
+  color: #ff0000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.hevea-grip-three-fasep-hg-shop-now:hover {
+  text-decoration: none;
+  color: #044c80;
+}
+
+.hevea-grip-three-fasep-hg-right {
+  width: 70%;
+  margin-right: -10%;
+  margin-top: 5%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hevea-grip-three-fasep-hg-right:hover {
+  transform: scale(1.1);
+}
+.hevea-grip-three-fasep-hg-image {
+  width: 100%;
+  margin-right: 10%;
+  height: auto;
+  width: 600px;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 1750px) {
+  .hevea-grip-three-fasep-hg-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .hevea-grip-three-fasep-hg-left {
+    margin: 0;
+    text-align: center;
+  }
+  .hevea-grip-three-fasep-hg-left {
+    margin-left: 30px !important;
+    margin-top: 25px;
+  }
+  .hevea-grip-three-fasep-hg-title {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: -40px;
+    line-height: normal;
+  }
+  
+  .hevea-grip-three-fasep-hg-big-title {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px !important;
+    width: 90%;
+    font-weight: 800;
+  }
+  
+  .hevea-grip-three-fasep-hg-text {
+    max-width: 100%;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+  }
+  .hevea-grip-three-fasep-hg-shop-now {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    margin-left: -50px;
+  }
+  .hevea-grip-three-fasep-hg-right {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hevea-grip-three-fasep-hg-image {
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    text-align: center;
+    width: 300px !important;
+  }
+  }
+  

@@ -1,0 +1,774 @@
+.all-products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+  margin-right: 100px;
+  margin-left: 220px;
+  justify-content: left;
+  align-items: start;
+  text-align: left;
+}
+
+.All-Products-Titles {
+  position: absolute;
+  left: 230px;
+  margin-top: -45px !important;
+  z-index: 999;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: left;
+}
+.calssnsmamane-de {
+  margin-right: 588px;
+}
+
+.list-button-view1 {
+  position: absolute;
+  display: none;
+  right: 225px !important;
+  margin-top: -35px;
+}
+
+.list-button-view1 svg {
+  transition: transform 0.3s ease-in-out; /* Apply transition to the transform property */
+}
+
+.list-button-view1:hover svg {
+  transform: scale(1.1); /* Scale the SVG on hover */
+}
+
+.product-card {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #c9c9c9;
+  margin: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease, transform 2s ease; /* Added box-shadow and transform to the transition */
+}
+
+.product-card:hover {
+  border-color: #3099d6;
+  box-shadow: 0 0 20px #3099d6; /* Increased the box-shadow size for a more pronounced effect */
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.product-image {
+  width: 300px !important; /* Adjust width as needed */
+  height: auto !important; /* Maintain aspect ratio */
+  margin-top: 50px !important;
+  display: block !important; /* Ensure image is treated as a block element */
+  margin-left: auto !important; /* Center horizontally */
+  margin-right: auto !important; /* Center horizontally */
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ea3a3a;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: slideFromLeft 0.3s ease forwards; /* Apply the animation */
+}
+
+.discount-label:hover {
+  background-color: #d82a2a; /* Change background color on hover */
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.newproduct-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #1aa11a;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: slideFromLeft 0.3s ease forwards; /* Apply the animation */
+}
+
+.newproduct-label:hover {
+  background-color: #0d7a0d; /* Change background color on hover */
+}
+
+/* Define the animation */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.instock-label {
+  color: #1aa11a;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Adding transition for smooth animation */
+}
+
+.instock-label:hover {
+  color: #011d01;
+  transform: scale(1.1); /* Applying scale transformation on hover */
+  font-weight: 600; /* Changing font weight on hover */
+}
+
+/* Add styles for Out of Stock label */
+.outofstock-label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ea3a3a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.outofstock-label:hover {
+  color: #640202;
+  transform: scale(1.1); /* Applying scale transformation on hover */
+  font-weight: 600; /* Changing font weight on hover */
+}
+
+.wishlist-name {
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 176px;
+  background-color: #ea3a3a;
+  color: #ffffff;
+  z-index: 9999999 !important;
+  padding: 2px;
+  width: 60px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.wishlist-link:hover .wishlist-name {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wishlist-link {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.wishlist-link:hover .icon-name {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wishlist-socials {
+  bottom: 10px;
+
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.wishlist-socials:hover {
+  transform: scale(1.3);
+  visibility: visible;
+}
+
+.wishlist-socials:hover svg path {
+  fill: #ea3a3a; /* Change the fill color to your desired color */
+}
+
+.wishlist-socials svg path {
+  fill: #7c7c7c; /* Change the fill color to your desired color */
+}
+
+.compare-name {
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 156.5px;
+  background-color: #ea3a3a;
+  color: #ffffff;
+  z-index: 9999999 !important;
+  padding: 2px;
+  width: 60px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.compare-link:hover .compare-name {
+  visibility: visible;
+  opacity: 1;
+}
+
+.compare-link {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+
+.compare-link:hover .icon-name {
+  visibility: visible;
+  opacity: 1;
+}
+
+.compare-socials {
+  bottom: 12px;
+
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.compare-socials:hover {
+  transform: scale(1.3);
+  visibility: visible;
+}
+
+/* Target the SVG inside the container and change its color */
+.compare-socials:hover svg path {
+  fill: #00438b; /* Change the fill color to your desired color */
+}
+
+.compare-socials svg path {
+  fill: #7c7c7c; /* Change the fill color to your desired color */
+}
+
+.contact-for-price {
+  color: #535353;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px !important;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 51px !important;
+  left: 75px !important;
+}
+
+.contact-for-price:hover {
+  color: #c9181e !important;
+  font-weight: 600;
+}
+
+.share-name {
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 137px;
+  background-color: #ea3a3a;
+  color: #ffffff;
+  z-index: 9999999 !important;
+  padding: 2px;
+  width: 60px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+.share-link:hover .share-name {
+  visibility: visible;
+  opacity: 1;
+}
+
+.share-link {
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+}
+
+.share-link:hover .icon-name {
+  visibility: visible;
+  opacity: 1;
+}
+
+.share-socials {
+  bottom: 12px;
+
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Apply hover effect to the container */
+.share-socials:hover {
+  transform: scale(1.3);
+}
+
+/* Target the SVG inside the container and change its color */
+.share-socials:hover svg path {
+  fill: #3099d6; /* Change the fill color to your desired color */
+}
+
+.share-socials svg path {
+  fill: #7c7c7c; /* Change the fill color to your desired color */
+}
+
+.product-name {
+  position: absolute;
+  bottom: 90px;
+  left: 20px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  width: 80%;
+}
+
+.wishlist-label {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.price-label {
+  position: absolute;
+  bottom: 50px !important;
+  left: 20px !important;
+  color: #c9181e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.price-container {
+  bottom: 40px;
+  left: 20px;
+}
+
+.original-price {
+  color: #c9181e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px !important;
+  position: absolute;
+  bottom: 50px !important;
+  left: 75px !important;
+  text-align: left;
+}
+.original-price.discount {
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  color: #c9181e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  bottom: 50px !important;
+  left: 150px !important;
+}
+
+.compare-mode-allproducts-22 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 280px !important;
+  margin-top: -40px;
+}
+.compare-mode-allproducts-22 svg {
+  transition: transform 0.3s ease-in-out; /* Apply transition to the transform property */
+}
+
+.compare-mode-allproducts-22:hover svg {
+  transform: scale(1.1); /* Scale the SVG on hover */
+}
+
+.compare-mode-allproducts-22 svg {
+  margin-right: 10px; /* Adjust the spacing between the icon and text */
+}
+
+.compare-mode-allproducts-33 {
+  color: #828282;
+  font-size: 16px; /* Adjust the font size as needed */
+  transition: transform 0.6s ease-in-out; /* Apply transition only to transform */
+}
+
+.compare-mode-allproducts-22:hover .compare-mode-allproducts-33 {
+  transform: translateX(10px); /* Move text to the right on hover */
+}
+
+.compare-mode-allproducts-22:hover .compare-mode-allproducts-33 {
+  color: #c9181e !important;
+  font-weight: 500;
+}
+
+.hg--product-11-dropdown-menu {
+  top: 160px;
+  position: absolute;
+  right: 20px !important;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  height: auto;
+  width: 180px;
+  transition: all 0.4s ease-in-out;
+}
+
+.hg--product-11-dropdown-menu:hover {
+  border-color: #c9181e;
+  box-shadow: 0 0 20px #c9181e; /* Increased the box-shadow size for a more pronounced effect */
+  transform: scale(1.001);
+}
+
+.hg--product-11-dropdown-menu div {
+  padding: 10px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hg--product-11-dropdown-menu div:hover {
+  background-color: #f5f5f5;
+}
+
+.filter-mode-allproducts-22 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  cursor: pointer;
+  right: 225px !important;
+  margin-top: -35px;
+}
+.filter-mode-allproducts-22 svg {
+  transition: transform 0.3s ease-in-out; /* Apply transition to the transform property */
+}
+
+.filter-mode-allproducts-22:hover svg {
+  transform: scale(1.2); /* Scale the SVG on hover */
+}
+
+.filter-mode-allproducts-22:hover {
+  color: #c9181e !important;
+  font-weight: 500;
+}
+
+.add-to-cart-button {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  border: 0.2px solid #cccccc80 !important; /* Adjust the color and opacity */
+  background-color: transparent;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 18px;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #c9181e;
+  color: #fff;
+  border: 0.35px solid #00000080 !important; /* Adjust the color and opacity */
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-more-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.show-more-button {
+  border: 2px solid #666666;
+  background-color: transparent;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 5px 20px;
+  margin-left: 40px;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.show-more-button:hover {
+  background-color: #828282;
+  color: #ffffff;
+}
+@media (max-width: 1700px) {
+  .product-card {
+    width: 380px;
+    height: 600px;
+    border: 1px solid #c9c9c9;
+    margin: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease, transform 2s ease; /* Added box-shadow and transform to the transition */
+  }
+  .hg--product-11-dropdown-menu {
+    top: 160px;
+    position: absolute;
+    right: 5px !important;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: auto;
+    width: 160px;
+    transition: all 0.4s ease-in-out;
+  }
+  .all-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+    margin-right: 100px;
+    margin-left: 160px;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+  }
+  .All-Products-Titles {
+    position: absolute;
+    left: 170px;
+    margin-top: -45px !important;
+    z-index: 999;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+  }
+  .filter-mode-allproducts-22 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    cursor: pointer;
+    right: 232px !important;
+    margin-top: -35px;
+  }
+  .list-button-view1 {
+    position: absolute;
+    right: 172px !important;
+    margin-top: -35px;
+  }
+  .compare-mode-allproducts-22 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 287px !important;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .all-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+    margin-right: 5%;
+    margin-left: 0px !important;
+    justify-content: left;
+    align-items: start;
+
+    text-align: left;
+  }
+  .product-card {
+    width: 120% !important;
+    height: 600px;
+    border: 1px solid #c9c9c9;
+    margin: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease, transform 2s ease; /* Added box-shadow and transform to the transition */
+  }
+
+  .compare-mode-allproducts-22:hover {
+    transform: scale(0.9) !important;
+    visibility: visible;
+  }
+  .hg--product-11-dropdown-menu {
+    top: 160px;
+    position: absolute;
+    left: 10px !important;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+  }
+  .All-Products-Titles {
+    position: absolute;
+    left: 150px !important;
+    margin-top: -45px !important;
+    z-index: 999;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+  }
+  .filter-mode-allproducts-22 {
+    display: flex;
+    transform: scale(0.9);
+
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    cursor: pointer;
+    right: 15px !important;
+    margin-top: -35px !important;
+  }
+
+  .list-button-view1 {
+    transform: scale(0.8);
+    position: absolute;
+    right: 12px !important;
+    margin-top: -35px !important;
+  }
+  .compare-mode-allproducts-22 {
+    display: flex;
+    align-items: center;
+    transform: scale(0.8);
+    justify-content: flex-end;
+    position: absolute;
+    width: 34%;
+    right: 42px !important;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .all-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+    margin-right: 5%;
+    margin-left: 0px !important;
+    justify-content: left;
+    align-items: start;
+
+    text-align: left;
+  }
+  .product-card {
+    width: 120% !important;
+    height: 600px;
+    border: 1px solid #c9c9c9;
+    margin: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease, transform 2s ease; /* Added box-shadow and transform to the transition */
+  }
+
+  .compare-mode-allproducts-22:hover {
+    transform: scale(0.9) !important;
+    visibility: visible;
+  }
+  .hg--product-11-dropdown-menu {
+    top: 160px;
+    position: absolute;
+    left: 10px !important;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+  }
+  .All-Products-Titles {
+    position: absolute;
+    left: 150px !important;
+    margin-top: -45px !important;
+    z-index: 999;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+  }
+  .filter-mode-allproducts-22 {
+    display: flex;
+    transform: scale(0.9);
+
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    cursor: pointer;
+    right: 15px !important;
+    margin-top: -35px !important;
+  }
+
+  .list-button-view1 {
+    transform: scale(0.8);
+    position: absolute;
+    right: 12px !important;
+    margin-top: -40px !important;
+  }
+  .compare-mode-allproducts-22 {
+    display: flex;
+    align-items: center;
+    transform: scale(0.8);
+    justify-content: flex-end;
+    position: absolute;
+    width: 34%;
+    left: 1px !important;
+    margin-top: -40px;
+  }
+}

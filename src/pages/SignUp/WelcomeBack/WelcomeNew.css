@@ -1,0 +1,61 @@
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.sign-in-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sign-in-page-border {
+  width: 1148px;
+  height: 516px;
+  flex-shrink: 0;
+  border: 0.35px solid #E6E6E6;
+  transition: border 0.3s ease;
+}
+
+.sign-in-page-border:hover {
+  border: 0.35px solid #010F1E;
+}
+
+.sign-in-page-logo {
+  width: 300px;
+  height: auto;
+  margin-left: 5%;
+  margin-bottom: -30%;
+  transition: transform 0.3s;
+}
+
+.sign-in-page-logo:hover {
+  transform: scale(1.1);
+}
+
+.welcome-back-new-page-title {
+  color: #010F1E;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 32.863px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 10%;
+  margin-left: -20%;
+}
+
+
+.welcome-back-new-page-sub {
+  color: #010F1E;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: -2%;
+width: 77%;
+   margin-left: 0%;
+}

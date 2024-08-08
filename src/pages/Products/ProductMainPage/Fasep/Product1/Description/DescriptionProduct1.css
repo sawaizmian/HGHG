@@ -1,0 +1,323 @@
+/* Styles for larger screens (desktop/laptop) */
+.hevea-grip-sunwatch-hg-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 4%;
+  margin-top: -2%;
+  background: #ffffff;
+}
+
+.hevea-grip-sunwatch-hg-left {
+  margin-left: 170px;
+  margin-top: 6%;
+}
+
+.hevea-grip-sunwatch-hg-text-2 {
+  color: #000000;
+}
+
+.hevea-grip-sunwatch-hg-title {
+  color: #c9181e;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+ 
+.hevea-grip-sunwatch-hg-big-title {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  line-height: normal;
+}
+
+.hevea-grip-sunwatch-hg-text {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  width: 80%;
+}
+
+.hevea-grip-sunwatch-hg-shop-now {
+  color: #ff0000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.hevea-grip-sunwatch-hg-shop-now:hover {
+  text-decoration: none;
+  color: #044c80;
+}
+
+.hevea-grip-sunwatch-hg-right {
+  width: 70%;
+  margin-right: 10%;
+  margin-top: 7%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.add-to-cart-quanity-11 {
+  margin-top: 15px !important;
+}
+
+.quantity-control-12 {
+  display: flex;
+  position: absolute;
+  border: 0.2px solid #dadada;
+  background-color: #053d65;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 18px;
+  transition: all 0.3s, box-shadow 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.quantity-control-12:hover {
+  background-color: #c9181e;
+  color: #fff;
+  transform: scale(1.05); /* Adding a slight scale effect on hover */
+}
+
+.quantity-control-12 div {
+  cursor: pointer;
+  margin: 0 15px;
+}
+.add-to-cart-button-product-5 {
+  position: absolute;
+  border: 0.2px solid #dadada;
+  background-color: transparent;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  left: 320px;
+  font-size: 16px;
+  padding: 5px 18px;
+  transition: all 0.3s, box-shadow 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.add-to-cart-button-product-5:hover {
+  background-color: #c9181e;
+  color: #fff;
+  transform: scale(1.05); /* Adding a slight scale effect on hover */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.price-tag-113 {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  border: 2px solid #c7c7c7;
+  z-index: 9999998;
+  background-color: transparent;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  margin-top: 50px;
+  padding: 8px;
+  transition: all 0.3s, box-shadow 0.3s, color 0.3s;
+  width: 500px;
+}
+
+.sale-original-price-value-113 {
+  margin-left: 60px;
+}
+
+.original-price-113 {
+  font-weight: 400;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+
+.original-price-value-113 {
+  font-weight: 600;
+  color: #c9181e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  margin-left: 240px; /* Push discounted price to the right */
+  /* text-decoration: line-through; */
+}
+
+.discounted-price-113 {
+  color: #ea3a3a;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: auto; /* Push discounted price to the right */
+}
+
+/* Hover effect */
+.price-tag-113:hover {
+  border: 2px solid #2e2e2e;
+
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hevea-grip-sunwatch-hg-right:hover {
+  transform: scale(1.1);
+}
+.hevea-grip-sunwatch-hg-image {
+  width: 100%;
+  margin-right: 10%;
+  height: auto;
+  width: 500px;
+}
+
+@media (max-width: 1750px) {
+  .hevea-grip-sunwatch-hg-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hevea-grip-sunwatch-hg-left {
+    margin: 0;
+    text-align: center;
+  }
+  .hevea-grip-sunwatch-hg-left {
+    margin-left: 30px !important;
+    margin-top: 25px;
+  }
+  .hevea-grip-sunwatch-hg-title {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: -40px;
+    line-height: normal;
+  }
+
+  .hevea-grip-sunwatch-hg-big-title {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px !important;
+    width: 90%;
+    font-weight: 800;
+  }
+
+  .hevea-grip-sunwatch-hg-text {
+    max-width: 100%;
+    font-size: 16px;
+    width: 90%;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .hevea-grip-sunwatch-hg-text li{
+    max-width: 100%;
+    font-size: 16px;
+    width: 90%;
+    text-align: left;
+  }
+  .hevea-grip-sunwatch-hg-shop-now {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    margin-left: -50px;
+  }
+  .hevea-grip-sunwatch-hg-right {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hevea-grip-sunwatch-hg-image {
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 60px;
+    text-align: center;
+    width: 300px !important;
+  }
+  .price-tag-113 {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    border: 2px solid #c7c7c7;
+    background-color: transparent;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin-top: 50px;
+    padding: 1px;
+    margin-left: -18.6px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: all 0.3s, box-shadow 0.3s, color 0.3s;
+    width: 379px;
+    transform: scale(0.8);
+  }
+  .sale-original-price-value-113 {
+    display: none;
+  }
+
+  .original-price-113 {
+    font-weight: 400;
+    margin-left: 20px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+  }
+
+  .original-price-value-113 {
+    font-weight: 600;
+    color: #c9181e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    margin-left: 90px; /* Push discounted price to the right */
+    /* text-decoration: line-through; */
+  }
+
+  .quantity-control-12 {
+    display: flex;
+    position: absolute;
+    border: 0.2px solid #b4b4b4;
+    background-color: #053d65;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 18px;
+    margin-left: 20px;
+    transition: all 0.3s, box-shadow 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+
+  .add-to-cart-button-product-5 {
+    position: absolute;
+    border: 0.2px solid #b4b4b4;
+    background-color: transparent;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    left: 229.6px;
+    font-size: 16px;
+    padding: 5px 18px;
+    transition: all 0.3s, box-shadow 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+}

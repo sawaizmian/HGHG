@@ -1,0 +1,156 @@
+/* Styles for larger screens (desktop/laptop) */
+.hevea-grip-Vessel-s-hg1-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+     margin-bottom: 4%;
+    background: #fff;
+  }
+  
+  .hevea-grip-Vessel-s-hg1-left {
+    margin-left: 170px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+ }
+  
+  .hevea-grip-Vessel-s-hg1-title {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: normal;
+  }
+  .hevea-grip-Vessel-s-hg1-container {
+    opacity: 0; /* Initially hide the container */
+    transform: translateY(100px); /* Move the container down initially */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Add transition for smooth animation */
+  }
+  
+  .hevea-grip-Vessel-s-hg1-container.animate {
+    opacity: 1; /* Show the container when animation starts */
+    transform: translateY(0); /* Move the container back to its original position */
+  }
+  
+  .hevea-grip-Vessel-s-hg1-big-title {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    line-height: normal;
+  }
+  
+  .hevea-grip-Vessel-s-hg1-text {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+     font-weight: 500;
+    line-height: 28px;
+    width: 80%;
+    margin-bottom: 20px;
+
+  }
+  
+  .hevea-grip-Vessel-s-hg1-shop-now {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: underline;
+  }
+  
+  .hevea-grip-Vessel-s-hg1-shop-now:hover {
+    text-decoration: none;
+     color: #044c80;
+  }
+  
+  .hevea-grip-Vessel-s-hg1-right {
+    width: 70%;
+    margin-right: 5%;
+    margin-top: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hevea-grip-Vessel-s-hg1-right:hover {
+  transform: scale(1.1);
+}
+  .hevea-grip-Vessel-s-hg1-image {
+    width: 100%;
+    margin-left: 20%;
+    height: auto;
+    width: 750px;
+  }
+  
+  /* Media queries for smaller screens */
+@media (max-width: 1750px) {
+  .hevea-grip-Vessel-s-hg1-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hevea-grip-Vessel-s-hg1-left {
+    margin: 0;
+    text-align: center;
+  }
+  .hevea-grip-Vessel-s-hg1-left {
+    margin-left: 30px !important;
+    margin-top: 25px;
+  }
+  .hevea-grip-Vessel-s-hg1-title {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: -40px;
+    line-height: normal;
+  }
+
+  .hevea-grip-Vessel-s-hg1-big-title {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px !important;
+    width: 90%;
+    font-weight: 800;
+  }
+
+  .hevea-grip-Vessel-s-hg1-text {
+    max-width: 100%;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+  }
+  .hevea-grip-Vessel-s-hg1-shop-now {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    margin-left: -50px;
+  }
+  .hevea-grip-Vessel-s-hg1-right {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hevea-grip-Vessel-s-hg1-image {
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    text-align: center;
+    width: 300px !important;
+  }
+}
+ 

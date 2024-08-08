@@ -1,0 +1,100 @@
+.workshop-equipment-eight-container {
+  text-align: center;
+}
+
+.workshop-equipment-eight-container {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.workshop-equipment-eight-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.workshop-equipment-eight-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.workshop-equipment-eight-left,
+.workshop-equipment-eight-right {
+  width: 45%;
+  margin-bottom: 70px !important;
+}
+
+.workshop-equipment-eight-left-image,
+.workshop-equipment-eight-right-image {
+  width: 45%;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.workshop-equipment-eight-left-image:hover,
+.workshop-equipment-eight-right-image:hover {
+  transform: scale(1.05);
+}
+
+.workshop-equipment-eight-subheading {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.workshop-equipment-eight-description {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.workshop-equipment-eight-shop-now {
+  color: #ff0000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.workshop-equipment-eight-shop-now:hover {
+  text-decoration: none;
+  color: #044c80;
+}
+
+@media (max-width: 800px) {
+  .workshop-equipment-eight-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workshop-equipment-eight-left,
+  .workshop-equipment-eight-right {
+    width: 80%; /* Adjust width to fit better on smaller screens */
+    margin-bottom: 20px !important;
+  }
+
+  .workshop-equipment-eight-left-image,
+  .workshop-equipment-eight-right-image {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .workshop-equipment-eight-subheading {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .workshop-equipment-eight-description {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .workshop-equipment-eight-shop-now {
+    font-size: 14px;
+  }
+}

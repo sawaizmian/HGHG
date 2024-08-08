@@ -1,0 +1,434 @@
+.container-contact {
+  margin-left: 100px;
+  margin-top: 350px !important;
+  margin-bottom: 70px;
+}
+
+.error {
+  border: 0.3px solid #e21414 !important;
+}
+
+.error-message {
+  color: #e21414;
+  font-size: 14px !important;
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Existing CSS */
+/* ... */
+
+.message-sent {
+  color: green; /* Change color as needed */
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+  font-family: "Poppins", sans-serif;
+}
+.error {
+  border: 1px solid red; /* Or any other style to indicate an error */
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.CodeHidelogo-logo {
+  transition: transform 0.8s ease-in-out;
+  width: 15% !important;
+  margin-left: 13%;
+}
+
+.CodeHidelogo-logo:hover {
+  transform: scale(1.3);
+  transition: transform 0.8s ease-in-out;
+}
+
+.container-text {
+  max-width: 648px;
+  margin-top: -365px;
+  margin-left: 45%;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#contactus {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: -15px;
+  color: #727272;
+  transition: color 0.3s ease-in-out;
+}
+
+#contactus:hover {
+  color: #e21414;
+}
+
+#welcome {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: -15px;
+  margin-top: 100px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #727272;
+
+  transition: color 0.3s ease-in-out;
+}
+.description:hover {
+  color: #e21414;
+}
+
+.content {
+  margin-left: 0px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.form-wrapper {
+  width: 662px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.form-row h2 {
+  width: 150px;
+  display: inline-block;
+  margin: 0;
+}
+
+.form-input-half {
+  width: calc(50% - 5px);
+}
+
+.form-input,
+.form-input-long,
+#form-input-message {
+  width: 100%;
+  height: 37px;
+  flex-shrink: 0;
+  border: 0.3px solid #e6e6e6;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-text-fill-color: #727272;
+  font-family: "Poppins", sans-serif;
+  transition: border 0.3s ease;
+}
+
+.form-input:hover,
+.form-input-long:hover,
+#form-input-message:hover {
+  border: 0.35px solid #e21414;
+  -webkit-text-fill-color: #e21414;
+}
+
+#form-input-message {
+  height: 116px;
+}
+
+.form-textarea {
+  width: calc(100% - 13px);
+  height: 116px;
+  flex-shrink: 0;
+  border: 0.3px solid #e6e6e6;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.form-submit {
+  margin-top: 20px;
+  width: 130px;
+  height: 35px;
+  margin-bottom: -5px;
+  flex-shrink: 0;
+  border: 0.3px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #716c66;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+#sent {
+  font-size: 23px;
+  padding-top: 2px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.form-submit:hover {
+  background-color: #e0c592;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 15, 30, 0.4);
+}
+
+.svg-logo {
+  width: 15px;
+  height: 15px;
+  fill: #e0c592;
+  margin-left: 6px;
+}
+
+.sent-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.form-submit:hover {
+  background-color: #010f1e;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.BidType24Logo-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.BidType24Logo-logo {
+  width: 500px; /* Adjust the width as needed */
+  margin-left: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .CodeHidelogo-logo {
+    display: none !important;
+  }
+
+  .container-contact {
+    margin-left: -450px;
+    margin-top: 450px !important;
+    margin-bottom: 70px;
+  }
+
+  .BidType24Logo-logo:hover {
+    transform: scale(1.2);
+    transition: transform 0.8s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .CodeHidelogo-logo {
+    display: none !important;
+  }
+  .container-contact {
+    margin-left: -450px;
+    margin-top: 450px !important;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .CodeHidelogo-logo {
+    display: none !important;
+  }
+  .container-contact {
+    margin-left: -550px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+
+  .BidType24Logo-logo:hover {
+    transform: scale(1.2);
+    transition: transform 0.8s ease-in-out;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .CodeHidelogo-logo {
+    display: none !important;
+  }
+  .container-contact {
+    margin-left: -550px;
+    margin-top: -250px;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .CodeHidelogo-logo {
+    display: none !important;
+  }
+  .container-contact {
+    margin-left: -440px;
+    margin-top: 550px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .form-wrapper {
+    margin-top: -70px;
+    transform: scale(0.9);
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  #form-input-half-1 {
+    margin-right: -100%;
+  }
+  #form-input-half-2 {
+    margin-right: 50.7%;
+    margin-top: 20%;
+  }
+  #form-input-half-3 {
+    margin-right: -100%;
+    margin-top: -10%;
+  }
+  #form-input-half-4 {
+    margin-right: 51%;
+    margin-top: 10%;
+  }
+  .error {
+    border: 0.3px solid #e21414 !important;
+  }
+
+  .error-message {
+    color: #e21414;
+    font-size: 14px !important;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Existing CSS */
+  /* ... */
+
+  .message-sent {
+    color: green; /* Change color as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+    margin-left: 15% !important;
+  }
+  .error {
+    border: 1px solid red; /* Or any other style to indicate an error */
+  }
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 5px;
+  }
+
+  .form-input {
+    width: 152%;
+    height: 37px;
+    margin-left: 30%;
+    flex-shrink: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  .form-input-long {
+    width: 74%;
+    margin-left: 15%;
+    height: 37px;
+    flex-shrink: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  #form-input-message {
+    width: 74%;
+    flex-shrink: 0;
+    margin-left: 15.1%;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #sent{
+    height: 45px;
+  }
+
+  .form-submit {
+    margin-top: 20px;
+    margin-left: 15% !important;
+    width: 74%;
+    height: 30px;
+    margin-bottom: 5px;
+    flex-shrink: 0;
+    border: 0.3px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #716c66;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+  }
+
+  .description {
+    width: 80%;
+    align-items: left !important;
+    text-align: left !important;
+    margin-left: 1% !important;
+  }
+
+  #contactus {
+    margin-left: 17% !important ;
+    align-items: left !important;
+    text-align: left !important;
+    display: flex;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .description {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    margin-left: 17% !important;
+  }
+
+  #contactus {
+    align-items: center !important;
+    margin-left: 42%;
+    text-align: center !important;
+    display: flex;
+    margin-top: -5%;
+  }
+}

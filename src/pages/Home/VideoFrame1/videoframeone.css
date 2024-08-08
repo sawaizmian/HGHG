@@ -1,0 +1,110 @@
+/* videoframeone.css */
+.video-hg-frame-one {
+  width: 40%;
+  margin-top: 20px !important;
+  margin: auto; /* Center the frame horizontally */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  background-color: #ffffff; /* Set background color */
+  overflow: hidden; /* Hide overflow to clip the sliding videos */
+}
+
+.related-products-title {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  color: #FE0000;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Arial", sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+.related-products-title:hover {
+  transform: scale(1.1);
+  color: #0e5788;
+  font-weight: 600;
+}
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px; /* Add padding to simulate sliding */
+  animation: slideAnimation 30s linear infinite; /* Apply slide animation */
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-16.666% * 12)
+    ); /* Slide only 6 videos to the left */
+  }
+}
+
+.video-thumbnail {
+  width: calc(
+    16.666% - 20px
+  ); /* 16.666% for each video box with 20px spacing */
+  height: 69px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: 15px; /* Add margin-top */
+  transition: transform 0.4s ease-in-out; /* Add transition for scaling */
+}
+
+.video-thumbnail:hover {
+  transform: scale(1.4); /* Slightly smaller scaling on hover */
+  animation-play-state: paused; /* Pause the slide animation when hovering */
+}
+
+.selected-video-container {
+  width: 100%;
+  background-color: #fff; /* Set background color */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.selected-video-wrapper {
+  width: 60%; /* Adjust the width as desired */
+  margin: 0 auto; /* Center the video */
+}
+
+.selected-video {
+  width: 100%;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 800px) {
+  .video-hg-frame-one {
+    width: 100% !important;
+    margin-top: 20px !important;
+    margin: auto; /* Center the frame horizontally */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background-color: #ffffff; /* Set background color */
+    overflow: hidden; /* Hide overflow to clip the sliding videos */
+  }
+  .selected-video-wrapper {
+    width: 100% !important; /* Adjust the width as desired */
+    margin: 0 auto; /* Center the video */
+  }
+  .related-products-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+    color: #ad1b1b;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    font-family: "Arial", sans-serif;
+    transition: transform 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,149 @@
+.hevea-grip-cascos-jm-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 700px;
+  margin-top: 1% !important;
+  margin-bottom: 6% !important;
+  margin-top: 20px;
+  background: #ffffff;
+}
+
+.hevea-grip-cascos-jm-left {
+  margin-left: 170px;
+  margin-top: 7%;
+}
+
+.hevea-grip-cascos-jm-title {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+.hevea-grip-cascos-jm-big-title {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hevea-grip-cascos-jm-text {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  line-height: 28px;
+  width: 80%;
+}
+
+.hevea-grip-cascos-jm-shop-now {
+  color: #ff0000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.hevea-grip-cascos-jm-shop-now:hover {
+  text-decoration: none;
+  color: #044c80;
+}
+
+.hevea-grip-cascos-jm-right {
+  width: 70%;
+  margin-right: 10%;
+  margin-top: 5%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hevea-grip-cascos-jm-right:hover {
+  transform: scale(1.1);
+}
+.hevea-grip-cascos-jm-image {
+  width: 100%;
+  margin-left: 20%;
+  height: auto;
+  width: 750px;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 1750px) {
+  .hevea-grip-cascos-jm-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hevea-grip-cascos-jm-left {
+    margin: 0;
+    text-align: center;
+  }
+  .hevea-grip-cascos-jm-title {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: -40px;
+
+    line-height: normal;
+  }
+  .hevea-grip-cascos-jm-left {
+    margin-left: 30px;
+  }
+  .hevea-grip-cascos-jm-big-title {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px !important;
+    width: 90%;
+    font-weight: 800;
+  }
+
+  .hevea-grip-cascos-jm-text {
+    max-width: 100%;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+  }
+  .hevea-grip-cascos-jm-text ul {
+    max-width: 100%;
+    font-size: 16px;
+    width: 90%;
+    text-align: left;
+  }
+  .hevea-grip-cascos-jm-shop-now {
+    color: #ff0000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    margin-left: -50px;
+  }
+  .hevea-grip-cascos-jm-right {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hevea-grip-cascos-jm-image {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px !important;
+  }
+}

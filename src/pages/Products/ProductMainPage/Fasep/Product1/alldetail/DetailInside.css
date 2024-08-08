@@ -1,0 +1,457 @@
+.bid-detail-inside-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin-top: -80px;
+}
+
+.bid-all-detail-box-main-section {
+  width: 100%;
+  height: 1250px;
+  flex-shrink: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bid-main-detail-title {
+  color: #010f1e;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 0%;
+  margin-bottom: 0.4%;
+  margin-top: 3%;
+}
+
+.bid-main-detail-subtitle {
+  color: #010f1e;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.4%;
+}
+
+.bid-main-detail-subtext {
+  color: #010f1e;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 275;
+  width: 30%;
+  line-height: normal;
+}
+
+.bid-main-detail-tabs {
+  display: flex;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 2%;
+  justify-content: center;
+}
+
+.bid-main-detail-tab {
+  color: #010f1e;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  margin-right: 3%;
+  transition: all 0.3s;
+}
+
+.bid-main-detail-tab::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background: #dc0000;
+  position: absolute;
+  top: 23px; /* Add a top margin of 10px */
+  left: 50%;
+  transition: all 0.3s;
+}
+
+.bid-main-detail-tab:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.bid-main-detail-tab-svg {
+  margin-bottom: -5%;
+}
+
+/* BidDetailInfoOne.css */
+.bid-detail-info-one-page-three {
+  width: 1602px;
+  margin-left: -0%;
+  flex-shrink: 0;
+  margin-top: 3.3%;
+  overflow-y: auto;
+  transition: box-shadow 0.3s ease, border 0.3s ease; /* Add smooth transitions for box-shadow and border */
+}
+
+.bid-detail-info-one-box-page-three {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  margin-left: 1.4%;
+  width: 90%;
+  margin-top: 1.4%;
+}
+
+/* YourComponent.css */
+
+.bid-detail-registration-id-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: -3%;
+}
+
+.bid-main-detail-box-one,
+.bid-main-detail-box-two {
+  border: 2.556px solid #dadada;
+  width: 834px; /* Adjusted width for the second box to match your design */
+  height: 51px;
+  flex-shrink: 0;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Add spacing between the boxes if needed */
+
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.bid-main-detail-box-one:hover {
+  background: #ffffff;
+  color: #c9181e;
+  font-weight: 400;
+  transform: scale(1.1); /* Scale up on hover */
+}
+.bid-main-detail-box-content {
+  color: #010f1e;
+  font-family: "Poppins", sans-serif;
+  font-size: 28.115px;
+  font-style: normal;
+  line-height: normal;
+  text-align: left; /* Left align the text */
+}
+
+.bid-main-detail-box-one {
+  background: #fafafa;
+  font-weight: 275;
+  -webkit-text-fill-color: #010f1e;
+}
+
+.bid-main-detail-box-two {
+  background: #c9181e;
+  color: #ffffff;
+  font-weight: 400;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.bid-main-detail-box-two:hover {
+  background: #ffffff;
+  color: #c9181e;
+  font-weight: 400;
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.bid-detail-download-pdf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -23%;
+  margin-top: 9%;
+}
+
+.bid-detail-download-pdf-item {
+  display: flex;
+  align-items: center;
+  margin: 1px 0;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Add a smooth transition effect for the entire item */
+}
+
+.bid-detail-download-pdf-text {
+  color: #010f1e;
+  font-family: "Poppins", sans-serif;
+  font-size: 18.763px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 10px;
+}
+
+.bid-detail-download-pdf-text-125 {
+  margin-top: 20px;
+}
+
+.bid-detail-download-pdf-text-1 {
+  color: #010f1e;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-left: -400px;
+  font-style: normal;
+  text-align: center !important;
+  font-weight: 300;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform property */
+}
+
+.bid-detail-download-pdf-text-1:hover {
+  color: #c9181e;
+  transform: scale(1.1) !important; /* Scale to 110% on hover */
+  font-weight: 600;
+}
+
+.bid-detail-download-pdf-svg {
+  cursor: pointer;
+}
+
+.bid-detail-download-pdf-svg path {
+  transition: all 0.3s ease; /* Smooth SVG path stroke color transition */
+}
+
+.bid-detail-download-pdf-item:hover .bid-detail-download-pdf-text {
+  color: #971010; /* Change text color on hover */
+}
+
+.bid-detail-download-pdf-item:hover .bid-detail-download-pdf-svg path {
+  stroke: #971010; /* Change SVG path stroke color on hover */
+}
+
+.bid-detail-info-one-box-page-three-bulleted ul {
+  list-style-type: disc; /* Use a disc (dot) as the list marker */
+  padding-left: 24px; /* Add some left padding for spacing */
+}
+
+.bid-detail-info-one-box-page-three-bulleted ul li::marker {
+  color: #032242; /* Change the color of the bullet points to red */
+}
+.bid-detail-info-one-box-page-three-bulleted {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  margin-left: 1%;
+  width: 90%;
+  margin-top: 0.5%;
+}
+
+.bid-specs-up-1-svg-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: -0.1%;
+  width: 100%;
+  text-align: center;
+}
+
+.bid-specs-svg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  margin: 0 30px; /* Adjust the margin as needed to separate the elements */
+}
+
+.bid-specs-up-1-svg-feature svg path,
+.bid-specs-up-1-1-svg-feature-box span {
+  transition: color 0.3s ease, fill 0.3s ease; /* Smooth transition for color changes */
+}
+
+.bid-specs-up-1-svg-feature:hover svg path {
+  fill: #3379ac; /* Change fill color of the SVG on hover */
+}
+
+.bid-specs-up-1-svg-feature:hover .bid-specs-up-1-1-svg-feature-box span {
+  color: #3379ac; /* Change text color on hover */
+}
+
+.bid-specs-up-1-1-svg-feature-box span {
+  color: #010f1e;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bid-detail-info-one-page-three-specs {
+  width: 1602px;
+
+  margin-left: 3%;
+  flex-shrink: 0;
+  overflow-y: auto;
+  margin-top: 3.3%;
+}
+
+@media (max-width: 1750px) {
+  .bid-detail-inside-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: -100px;
+  }
+
+  .bid-all-detail-box-main-section {
+    width: 100%;
+    height: 1250px;
+    flex-shrink: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bid-main-detail-title {
+    color: #010f1e;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 0%;
+    margin-bottom: 0.4%;
+    margin-top: 3%;
+  }
+
+  .bid-main-detail-subtitle {
+    color: #010f1e;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.4%;
+  }
+
+  .bid-main-detail-subtext {
+    color: #010f1e;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 275;
+    width: 100%;
+    line-height: normal;
+  }
+
+  .bid-main-detail-tabs {
+    display: flex;
+    width: 100%;
+    transform: scale(0.7);
+    margin-top: 2%;
+    margin-left: 2%;
+    justify-content: center;
+  }
+
+  .bid-detail-info-one-box-page-three {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px !important;
+    font-style: normal;
+    line-height: normal;
+  }
+  .bid-detail-info-one-page-three {
+    width: 100%;
+    margin-left: 2%;
+
+    flex-shrink: 0;
+    margin-top: 2%;
+  }
+
+  .bid-main-detail-box-one,
+  .bid-main-detail-box-two {
+    border: 2.556px solid #dadada;
+    width: 125%; /* Adjusted width for the second box to match your design */
+    height: 40px;
+    flex-shrink: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Add spacing between the boxes if needed */
+
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+      transform 0.3s ease-in-out;
+  }
+  .bid-main-detail-box-content {
+    color: #010f1e;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    text-align: left; /* Left align the text */
+  }
+  .bid-detail-info-one-page-three-specs {
+    width: 100%;
+    margin-left: 2%;
+    flex-shrink: 0;
+    margin-top: 2%;
+  }
+  .bid-detail-info-one-box-page-three-bulleted {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 0%;
+    width: 90%;
+    margin-top: 0.5%;
+  }
+  .bid-detail-download-pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  .bid-detail-download-pdf-text {
+    color: #010f1e;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 10px;
+  }
+  .bid-detail-download-pdf-text-125 {
+    margin-top: 20px;
+    margin-left: 455px;
+  }
+  .bid-detail-download-pdf-text-1 {
+    color: #010f1e;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin-left: -400px;
+    font-style: normal;
+    text-align: center !important;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform property */
+  }
+}

@@ -1,0 +1,109 @@
+.workshop-equipment-five-container {
+  text-align: center;
+}
+.workshop-equipment-five-container {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.workshop-equipment-five-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.workshop-equipment-five-heading {
+  color: #D00000;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;   
+  margin-top: 50px;
+}
+
+.workshop-equipment-five-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.workshop-equipment-five-left,
+.workshop-equipment-five-right {
+  width: 45%;    
+  margin-bottom: 40px !important;
+}
+
+.workshop-equipment-five-left-image,
+.workshop-equipment-five-right-image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.workshop-equipment-five-left-image:hover,
+.workshop-equipment-five-right-image:hover {
+  transform: scale(1.05);
+}
+
+.workshop-equipment-five-subheading {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.workshop-equipment-five-description {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.workshop-equipment-five-shop-now {
+  color: #ff0000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.workshop-equipment-five-shop-now:hover {
+  text-decoration: none;
+  color: #044c80;
+}
+
+@media (max-width: 800px) {
+  .workshop-equipment-five-heading {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .workshop-equipment-five-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workshop-equipment-five-left,
+  .workshop-equipment-five-right {
+    width: 80%; /* Adjust width to fit better on smaller screens */
+    margin-bottom: 20px !important;
+  }
+
+  .workshop-equipment-five-left-image,
+  .workshop-equipment-five-right-image {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .workshop-equipment-five-subheading {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .workshop-equipment-five-description {
+    font-size: 14px !important;
+    margin-bottom: 5px;
+  }
+
+  .workshop-equipment-five-shop-now {
+    font-size: 14px;
+  }
+}
